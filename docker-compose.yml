@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+  partner:
+    build: .
+    restart: always
+    container_name: signature
+    ports:
+      - 8182:8080
+    working_dir: /app
+    depends_on:
+      - mongodb
+    networks:
+      - signature-network
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: signaturedb
+    ports:
+      - 27017:27017
+    volumes:
+      - ./resources/db/V1__init_db.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - signature-network
+    command: ["--bind_ip_all"]
+
+  rabbitmq-container:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./rabbitmq/definitions.json:/etc/rabbitmq/definitions.json:ro
+      - ./rabbitmq/rabbitmq.config:/etc/rabbitmq/rabbitmq.config:ro
+
+networks:
+  signature-network:
+    driver: bridge

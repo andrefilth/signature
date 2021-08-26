@@ -1,0 +1,22 @@
+
+server:
+    port: 0
+    servlet:
+        context-path: /api/signature
+
+spring:
+    data:
+        mongodb:
+            port: 0
+    profiles:
+        active: test
+    h2:
+        console:
+            enabled: true
+            path: /console
+    jooq:
+        sql-dialect: h2
+
+logging:
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %magenta([%t]) %m%n"

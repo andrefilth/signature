@@ -1,0 +1,10 @@
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/extractor/Extractor.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/handler/ControllerAdviceHandler.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/handler/response/ErrorResponse.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/handler/exception/ApiException.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/SignatureApiApplication.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/extractor/NotValidExceptionToErroRespondeExtractor.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/handler/exception/notfound/NotFoundException.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/infra/extractor/FiedToErroRespondeExtractor.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/restapi/PurchaseController.java
+/Users/andrefranco/git/git/signature/src/main/java/com/br/globo/signature/config/SpringFoxConfig.java

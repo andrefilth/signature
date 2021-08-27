@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.br.globo.signature.restapi.PurchaseControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.888 s - in com.br.globo.signature.restapi.PurchaseControllerIntegrationTest

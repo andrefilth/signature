@@ -10,7 +10,7 @@ VOLUME /tmp
 EXPOSE 8081
 
 # The application's jar file
-ARG JAR_FILE=./build/libs/signature-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=./build/libs/signature.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} signature.jar
